@@ -80,6 +80,9 @@
   --bs-highlight-bg: #fff4cc;
 }
 
+
+
+
 *,
 *::before,
 *::after {
@@ -679,7 +682,7 @@ progress {
 }
 .row > * {
   flex-shrink: 0;
-  width: 100%;
+  /*width: 100%;*/
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -3629,6 +3632,7 @@ textarea.form-control-lg {
   color: var(--bs-nav-link-color);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  text-shadow:2px 2px 1px  #066173;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -10955,6 +10959,11 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  text-shadow:2px 2px 1px  #066173;
+}
+.masthead-subheading{
+  color: white
+  
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11123,8 +11132,8 @@ header.masthead .masthead-heading {
   position: absolute;
   z-index: 100;
   left: 0;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   margin-left: 0;
   text-align: center;
   color: white;
@@ -11185,8 +11194,8 @@ header.masthead .masthead-heading {
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-left: -50px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
@@ -11240,16 +11249,16 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.location-member {
   margin-bottom: 3rem;
   text-align: center;
 }
-.team-member img {
+.location-member img {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
-.team-member h4, .team-member .h4 {
+.location-member h4, .location-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
